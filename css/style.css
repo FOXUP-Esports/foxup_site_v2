@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+body {
+    background: url('../images/FOND.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+}
+
+.navbar {
+    position: relative;
+    background-color: black;
+}
+
+.nav-logo {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;
+    display: block;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.spacer {
+    margin-top: 10rem;
+}
+
+.fontAnton {
+    font-family: 'Anton', sans-serif;
+}
+
+.fontRaleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* ABOUT SECTION
+///////////////// */
+
+#about>.container {
+    /* border: red solid 5px; */
+    height: 35rem;
+    align-items: center;
+    display: flex
+}
+
+#about>img {
+    position: absolute;
+}
+
+.rect-black {
+    /* border: black solid 5px; */
+    align-items: center;
+    background-color: black;
+    height: 35rem;
+}
+
+.title-container {
+    /* border: green solid 5px; */
+    height: 5rem;
+    z-index: 10;
+    text-align: center;
+    font-size: 112px;
+}
+
+.text-container {
+    /* border: yellow solid 5px; */
+}
+
+.text-container>.fontAnton {
+    font-size: 43px;
+}
+
+.text-container>.fontRaleway {
+    font-size: 20px;
+}
+
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('../images/header_image.png') black no-repeat center center scroll;
+    }
+    header video {
+        display: none;
+    }
+}
