@@ -78,6 +78,10 @@ header .overlay {
     font-family: 'Raleway', sans-serif;
 }
 
+.text-align-center {
+    text-align: center;
+}
+
 
 /* ABOUT SECTION
 ///////////////// */
@@ -117,6 +121,58 @@ header .overlay {
 }
 
 .text-container>.fontRaleway {
+    font-size: 20px;
+}
+
+
+/* NETWORK SECTION
+///////////////// */
+
+.title-network {
+    margin-bottom: 5rem;
+    font-size: 73px;
+}
+
+
+/* YOUTUBE SECTION
+///////////////// */
+
+#youtube>.container {
+    /* border: red solid 5px; */
+    height: 35rem;
+    align-items: center;
+    display: flex
+}
+
+#youtube>.container>img {
+    position: absolute;
+    margin-left: 40rem;
+}
+
+.title-container-rtl>img {
+    position: absolute;
+    margin-top: -21rem;
+}
+
+.rect-black {
+    /* border: black solid 5px; */
+    align-items: center;
+    background-color: black;
+    height: 35rem;
+}
+
+.title-container-rtl {
+    /* border: green solid 5px; */
+    height: 5rem;
+    z-index: 10;
+    font-size: 112px;
+}
+
+.text-container-rtl>.fontAnton {
+    font-size: 43px;
+}
+
+.text-container-rtl>.fontRaleway {
     font-size: 20px;
 }
 
