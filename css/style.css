@@ -177,6 +177,15 @@ header .overlay {
 }
 
 
+/* SPONSORS SECTION
+///////////////// */
+
+.title-sponsors {
+    margin-bottom: 5rem;
+    font-size: 73px;
+}
+
+
 /* Media Query for devices withi coarse pointers and no hover functionality */
 
 
