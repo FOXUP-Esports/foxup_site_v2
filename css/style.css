@@ -14,6 +14,10 @@ body {
     background-color: black;
 }
 
+.nav-item {
+    padding-left: 3rem;
+}
+
 .nav-logo {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -112,10 +116,6 @@ header .overlay {
     font-size: 112px;
 }
 
-.text-container {
-    /* border: yellow solid 5px; */
-}
-
 .text-container>.fontAnton {
     font-size: 43px;
 }
@@ -211,6 +211,50 @@ header .overlay {
 }
 
 
+/* NEWS SECTION
+///////////////// */
+
+.title-news-section {
+    margin-bottom: 5rem;
+    font-size: 73px;
+}
+
+.card-body {
+    color: black;
+}
+
+
+/* SHOP SECTION
+///////////////// */
+
+#shop>.container {
+    /* border: red solid 5px; */
+    height: 35rem;
+    align-items: center;
+    display: flex
+}
+
+#shop>.container>img {
+    position: absolute;
+    margin-left: 40rem;
+}
+
+
+/*  FOOTER
+///////////////// */
+
+.footer-basic-centered {
+    background-color: black;
+    text-align: center;
+    padding: 45px;
+}
+
+.footer-basic-centered .footer-text {
+    color: #8f9296;
+    font-size: 14px;
+}
+
+
 /* Media Query for devices withi coarse pointers and no hover functionality */
 
 
@@ -222,5 +266,14 @@ header .overlay {
     }
     header video {
         display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-basic-centered {
+        padding: 35px;
+    }
+    .footer-basic-centered .footer-text {
+        font-size: 12px;
     }
 }
