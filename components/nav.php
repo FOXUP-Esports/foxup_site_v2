@@ -7,37 +7,40 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarToggle">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">CONNEXION</a>
+                    <a class="nav-link" href="login.php">CONNEXION</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.html">ACCUEIL <span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" href="index.php">ACCUEIL <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="staff.html">STAFF</a>
+                    <a class="nav-link" href="staff.php">STAFF</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="rosters.html">ROSTERS</a>
+                    <a class="nav-link" href="rosters.php">ROSTERS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.php">SHOP</a>
                 </li>
             </ul>
             <a class="navbar-brand d-none d-lg-block" href="#"><img class="nav-logo" src="images/FOXUP.png" /></a>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="tournois.html">F-CUP / Droit d'entrée</a>
+                    <a class="nav-link" href="tournois.php">F-CUP / Droit d'entrée</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="news.html">NEWS</a>
+                    <a class="nav-link" href="news.php">NEWS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">CONTACT</a>
+                    <a class="nav-link" href="contact.php">CONTACT</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="live.html">LIVE</a>
+                    <a class="nav-link" href="live.php">LIVE</a>
                 </li>
             </ul>
         </div>

@@ -5,16 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil | FOXUP Esports</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+
+    <?php include 'components/head.php'; ?>
+
 </head>
 
 <body>
-
     <?php include 'components/nav.php'; ?>
-
     <main>
         <!--  Start Header  -->
         <header>
@@ -162,7 +159,7 @@
                 <div class="row justify-content-center rect-black">
 
                     <div class="col title-container-roster">
-                        <p class="fontAnton">ROSTER</p>
+                        <p class="fontAnton">ROSTERS</p>
                     </div>
                     <div class="col text-container">
                         <div class="col">
@@ -237,10 +234,8 @@
         </section>
         <!--  End Shop  -->
 
-        <div class="spacer"></div>
-
         <?php include('components/footer.php'); ?>
-
+ 
     </main>
 </body>
 
