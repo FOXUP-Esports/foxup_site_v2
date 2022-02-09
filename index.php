@@ -1,53 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil | FOXUP Esports</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+
+    <?php include 'components/head.php'; ?>
+
 </head>
 
 <body>
-
-    <!--  Start NAV  -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand d-lg-none" href="#"><img class="nav-logo" src="images/FOXUP.png" /></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarToggle">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-            </ul>
-            <a class="navbar-brand d-none d-lg-block" href="#"><img class="nav-logo" src="images/FOXUP.png" /></a>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!--  END NAV  -->
-
+    <?php include 'components/nav.php'; ?>
     <main>
+        <!--  Start Header  -->
         <header>
 
             <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
@@ -55,8 +21,8 @@
 
             <!-- The HTML5 video element that will create the background video on the header -->
             <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-        <source src="media/header_video.mp4" type="video/mp4">
-      </video>
+                <source src="media/header_video.mp4" type="video/mp4">
+            </video>
 
             <!-- The header content -->
             <div class="container h-100">
@@ -68,6 +34,7 @@
                 </div>
             </div>
         </header>
+        <!--  End Header  -->
 
         <div class="spacer"></div>
 
@@ -183,8 +150,92 @@
         </section>
         <!--  End Sponsors  -->
 
+        <div class="spacer"></div>
+
+        <!--  Start Roster  -->
+        <section id="roster">
+            <div class="container">
+                <img src="images/1.png" style="position: absolute;">
+                <div class="row justify-content-center rect-black">
+
+                    <div class="col title-container-roster">
+                        <p class="fontAnton">ROSTERS</p>
+                    </div>
+                    <div class="col text-container">
+                        <div class="col">
+                            <div class="row justify-content-center">
+                                <div class="col">
+                                    <img src="images/teams_rosters/r6-nb.jpg" class="img-roster">
+                                    <img src="images/teams_rosters/valo2.jpg" class="img-roster">
+                                    <img src="images/teams_rosters/lol2.jpg" class="img-roster">
+                                    <img src="images/teams_rosters/rl2.jpg" class="img-roster">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!--  End Roster  -->
 
         <div class="spacer"></div>
+
+        <!--  Start News  -->
+        <section id="news">
+            <div class="container justify-content-center">
+                <div class="row justify-content-center title-news-section fontAnton">News</div>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="https://static.wixstatic.com/media/ab3530_d38e8a5c06224b138441f3c076d7aad5~mv2.jpg/v1/fill/w_454,h_341,fp_0.50_0.50,q_90/ab3530_d38e8a5c06224b138441f3c076d7aad5~mv2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">TOURNOI F-CUP</h5>
+                                <p class="card-text">Notre tournoi est de retour ; mais avec cette fois-ci, 1.000€ à gagner ! INSCRIPTION - F-CUP Pour inscrire ta team ? c'est directement...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="https://static.wixstatic.com/media/ab3530_30001e69e69d4aa6b16133e9ffdddad0~mv2.jpg/v1/fill/w_454,h_341,fp_0.50_0.50,q_90/ab3530_30001e69e69d4aa6b16133e9ffdddad0~mv2.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Notre coach PtiRenard qui explique pourquoi Fracture est difficile à jouer.</h5>
+                                <p class="card-text">Fracture est une map compliqué à appréhender par les joueurs de par sa construction en "H" qui la rend unique. En effet, les défenseurs...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="https://static.wixstatic.com/media/ab3530_0b38acdfdd864546a418bd14ba7b7e28~mv2.jpg/v1/fill/w_454,h_341,fp_0.50_0.50,q_90/ab3530_0b38acdfdd864546a418bd14ba7b7e28~mv2.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">La team organise le 19 Décembre 2021, la première édition de son tournoi</h5>
+                                <p class="card-text">Le bracket de la 1ère Édition ci-dessus. Les inscriptions se déroulent ici : https://play.toornament.com/fr/tournaments/5080650...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  End News  -->
+
+        <div class="spacer"></div>
+
+        <!--  Start Shop  -->
+        <section id="shop">
+            <div class="container">
+                <div class="row justify-content-center rect-black">
+                    <div class="col text-container-rtl">
+                        <img src="https://static.wixstatic.com/media/ab3530_040cbcd97fba46fbb6c36103e60a82a0~mv2.png/v1/fill/w_970,h_226,al_c,q_85,usm_0.66_1.00_0.01/2022-01-29%2017_38_19-Wix%20Website%20Editor.webp" alt="">
+                    </div>
+                    <div class="col title-container-rtl">
+                        <p class="fontAnton text-align-center">LE SHOP</p>
+                    </div>
+                </div>
+                <img src="images/2.png">
+            </div>
+        </section>
+        <!--  End Shop  -->
+
+        <?php include('components/footer.php'); ?>
+ 
     </main>
 </body>
 
