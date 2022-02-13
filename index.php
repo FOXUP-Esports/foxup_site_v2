@@ -16,12 +16,19 @@
         <!--  Start Header  -->
         <header>
 
+        <?php 
+        $json = file_get_contents($Strappi_Video);
+        $json_decode = json_decode($json, true);
+        $video = $json_decode["data"]["attributes"]["video"]["data"]["attributes"]["url"];
+        
+        ?>
+
             <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
             <div class="overlay"></div>
 
             <!-- The HTML5 video element that will create the background video on the header -->
             <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                <source src="media/header_video.mp4" type="video/mp4">
+                <source src="<?php echo $StrappiBaseUrl.$video; ?>" type="video/mp4">
             </video>
 
             <!-- The header content -->

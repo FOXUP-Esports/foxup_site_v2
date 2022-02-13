@@ -7,6 +7,7 @@
     <title>Staff | FOXUP Esports</title>
 
     <?php include 'components/head.php'; ?>
+    <link rel="stylesheet" type="text/css" href="css/staff.css" media="all" />
 
 </head>
 
@@ -40,26 +41,31 @@
 
         <div class="spacer"></div>
 
-         <!--  Start Listing Staff  -->
+        <!--  Start Listing Staff  -->
         <section id="listing">
             <div class="container justify-content-center">
                 <div class="row row-cols-1 row-cols-md-4 g-5">
                     <?php
-                    for ($i = 0; $i < 10; $i++) {
+
+                    $json = file_get_contents($Strappi_Staff);
+                    $json_decode = json_decode($json);
+                    $totalStaff = $json_decode->meta->pagination->total; // 2
+
+                    for ($i = 0; $i < $totalStaff; $i++) {
                     ?>
                         <div class="col">
                             <div class="card card-staff">
-                                <img src="https://static.wixstatic.com/media/ab3530_378044ea90bb4bfeaf7752c06d8a18c1~mv2.png/v1/fill/w_279,h_285,al_c,q_85,usm_0.66_1.00_0.01/Image-empty-state.webp" class="card-img-top" alt="...">
+                                <img src="<?php echo $StrappiBaseUrl . $json_decode->data[$i]->attributes->Image->data->attributes->url; ?>" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <p class="card-title fontStencil">HYGY</p>
-                                    <p class="card-role fontRaleway">Fondatrice</p>
+                                    <p class="card-title fontStencil"><?php echo $json_decode->data[$i]->attributes->Name; ?></p>
+                                    <p class="card-role fontRaleway"><?php echo $json_decode->data[$i]->attributes->Role; ?></p>
                                 </div>
                             </div>
                         </div>
-
                     <?php
                     }
                     ?>
+
                 </div>
             </div>
         </section>
