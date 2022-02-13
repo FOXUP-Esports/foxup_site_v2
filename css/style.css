@@ -282,3 +282,30 @@ header .overlay {
         font-size: 12px;
     }
 }
+
+.navSpan {
+    font-weight: 100;
+    display: inline-block;
+}
+
+navSpan:hover {
+    cursor: pointer;
+}
+
+.on-air-sign {
+    color: #555;
+    /* border: 2px solid #555; */
+    padding: 0.3em;
+    /* border-radius: 5px; */
+    text-transform: uppercase;
+    transition: all 1s;
+}
+
+.on-air-sign.on-air {
+    color: red;
+    /* border: 2px solid red; */
+    -webkit-animation: flicker 10s infinite;
+    animation: flicker 10s infinite;
+    /* box-shadow: 0 0 2px 2px #c00, inset 0 0 2px 2px #900; */
+    /* text-shadow: 0 0 10px red; */
+}
