@@ -1,6 +1,6 @@
 <?php
 
-$StrappiBaseUrl = "http://localhost:1337";
+$StrappiBaseUrl = "https://foxup-backend.herokuapp.com";
 
 // ROUTES
 $Strappi_Staff = $StrappiBaseUrl."/api/staffs/?populate=Image";
