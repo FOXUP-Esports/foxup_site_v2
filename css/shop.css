@@ -1,28 +1,32 @@
 /* STAFF PAGE
 ///////////////// */
 
-#staff>.container {
+#shopPage>.container {
     /* border: red solid 5px; */
     height: 35rem;
     align-items: center;
     display: flex
 }
 
-#staff>div>img {
+#shopPage img {
     position: absolute;
 }
 
-.card-staff {
+.card-shop {
     background-color: #0f0f0f;
     text-align: center;
 }
 
-#listing>div>div>div>div>div>p.card-title.fontStencil {
+#shopListing>div>div>div>div>div>p.card-title.fontStencil {
     font-size: 28px;
     color: #f5f5f5;
 }
 
-#listing>div>div>div>div>div>p.card-role.fontRaleway {
+#shopListing>div>div>div>div>div>p.card-role.fontRaleway {
     font-size: 16px;
     color: #f5f5f5;
+}
+
+#shopListing a {
+    width: 100%;
 }
