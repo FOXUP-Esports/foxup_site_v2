@@ -39,11 +39,29 @@
                         <p class="label">Quantité :</p>
                         <input type="number" pattern="[0-9]*" aria-label="Quantité" max="99999" min="1" value="1">
                         <div class="payment-product">
-                            <a href="#" class="btn btn-dark" >Ajouter au Panier</a>
+                            <a href="#" class="btn btn-dark">Ajouter au Panier</a>
                             <a href="#" class="btn btn-warning">Paypal</a>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="col">
+                        <pre>
+                        70 % polyester, 27 % coton, 3 % élasthanne
+                        Poids du tissu : 300 g/m² (8.85 oz/yd²), le poids peut varier de 5%
+                        Extérieur coton doux au toucher
+                        Intérieur molleton brossé
+                        Coupe slim
+                        Poches pratiques
+                        Ceinture élastique avec cordon de serrage blanc
+                        Emplacement pour un logo personnalisé sur le revers de la jambe droite
+                        Imprimé, coupé et cousu à la main par notre équipe interne d'experts
+                    </pre>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- End Articles  -->
         <?php include('components/footer.php'); ?>

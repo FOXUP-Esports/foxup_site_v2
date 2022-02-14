@@ -16,19 +16,19 @@
         <!--  Start Header  -->
         <header>
 
-        <?php 
-        $json = file_get_contents($Strappi_Video);
-        $json_decode = json_decode($json, true);
-        $video = $json_decode["data"]["attributes"]["video"]["data"]["attributes"]["url"];
-        
-        ?>
+            <?php
+            $json = file_get_contents($Strappi_Video);
+            $json_decode = json_decode($json, true);
+            $video = $json_decode["data"]["attributes"]["video"]["data"]["attributes"]["url"];
+
+            ?>
 
             <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
             <div class="overlay"></div>
 
             <!-- The HTML5 video element that will create the background video on the header -->
             <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                <source src="<?php echo $StrappiBaseUrl.$video; ?>" type="video/mp4">
+                <source src="<?php echo $StrappiBaseUrl . $video; ?>" type="video/mp4">
             </video>
 
             <!-- The header content -->
@@ -68,50 +68,7 @@
 
         <div class="spacer"></div>
 
-        <!--  Start Network  -->
-        <section id="network">
-            <div class="container justify-content-center">
-                <div class="row justify-content-center title-network fontAnton">NOS RÉSEAUX</div>
-                <div class="row">
-                    <div class="col text-align-center">
-                        <div class="row justify-content-center">
-                            <div class="col">
-                                <img src="images/Discord.webp" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col text-align-center">
-                        <div class="row justify-content-center">
-                            <div class="col">
-                                <img src="images/Instagram.webp" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col text-align-center">
-                        <div class="row justify-content-center">
-                            <div class="col">
-                                <img src="images/tiktok.webp" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col text-align-center">
-                        <div class="row justify-content-center">
-                            <div class="col">
-                                <img src="images/Twitter.webp" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col text-align-center">
-                        <div class="row justify-content-center">
-                            <div class="col">
-                                <img src="images/Twitch.webp" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--  End Network  -->
+        <?php include('components/network.php'); ?>
 
         <div class="spacer"></div>
 
@@ -159,30 +116,7 @@
 
         <div class="spacer"></div>
 
-        <!--  Start Roster  -->
-        <section id="roster">
-            <div class="container">
-                <img src="images/1.png" style="position: absolute;">
-                <div class="row justify-content-center rect-black">
-
-                    <div class="col title-container-roster">
-                        <p class="fontAnton">ROSTERS</p>
-                    </div>
-                    <div class="col text-container">
-                        <div class="col">
-                            <div class="row justify-content-center">
-                                <div class="col">
-                                    <img src="images/teams_rosters/r6-nb.jpg" class="img-roster">
-                                    <img src="images/teams_rosters/valo2.jpg" class="img-roster">
-                                    <img src="images/teams_rosters/lol2.jpg" class="img-roster">
-                                    <img src="images/teams_rosters/rl2.jpg" class="img-roster">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
-        <!--  End Roster  -->
+        <?php include('components/roster.php'); ?>
 
         <div class="spacer"></div>
 
@@ -242,7 +176,7 @@
         <!--  End Shop  -->
 
         <?php include('components/footer.php'); ?>
- 
+
     </main>
 </body>
 
