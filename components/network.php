@@ -13,7 +13,7 @@
                     <div class="col text-align-center">
                         <div class="row justify-content-center">
                             <div class="col">
-                                <a href="https://www.instagram.com/foxup.esports/"><img src="images/Instagram.webp" class="img-fluid"></a>
+                                <a href="https://www.instagram.com/foxupesports/"><img src="images/Instagram.webp" class="img-fluid"></a>
                             </div>
                         </div>
                     </div>
