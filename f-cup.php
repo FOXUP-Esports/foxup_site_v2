@@ -20,15 +20,13 @@
         <!--  Start Contact  -->
         <section id="F-CUP">
             <div class="container">
-                <img src="images/baniereFCUP.png" class="img-fluid" />
+                <img src="images/image f-cup kiiperone.webp" class="img-fluid" />
             </div>
 
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-xl-6">
-                        <div>
-                            <img src="image/image f-cup kiiperone.webp" height="300px" width="300px" />
-                        </div>
+
                     </div>
                     <div class="col-6 text-center">
                         <h3>INSCRIPTION F-CUP <br />EDITION</h3>
