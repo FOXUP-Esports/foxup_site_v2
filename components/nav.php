@@ -37,7 +37,7 @@
                     <a class="nav-link" href="contact.php">CONTACT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"></a>
+                    <a class="nav-link" href="partenaires.php">Partenaires</a>
                 </li>
                 <li class="nav-item">
                     <a href="#"><span class="navSpan on-air-sign on-air"><i class="fa-solid fa-circle"></i> En Live</span></a>
