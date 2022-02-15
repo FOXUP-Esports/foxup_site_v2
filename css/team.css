@@ -1,0 +1,123 @@
+:root {
+    --spacer: 80px;
+    --spacer2: 160px;
+    --spacer3: 240px;
+    --spacer4: 320px;
+    --spacer5: 400px;
+}
+
+html {
+    background-color: black;
+    text-align: center;
+}
+
+#teamSection>.container {
+    /* border: red solid 5px; */
+    height: 35rem;
+    align-items: center;
+    display: flex
+}
+
+#teamSection img {
+    position: absolute;
+}
+
+.margin-left-15 {
+    margin-left: 15%;
+}
+
+.team {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.player {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url("https://static.wixstatic.com/media/ab3530_3f125fe4a8b84ef682b8fc203c5c6210~mv2.png/v1/fill/w_279,h_285,al_c,q_85,usm_0.66_1.00_0.01/Image-empty-state.webp");
+}
+
+.player2 {
+    z-index: 1;
+    margin-left: var(--spacer);
+    background-size: cover;
+    background-image: url("https://static.wixstatic.com/media/ab3530_3f125fe4a8b84ef682b8fc203c5c6210~mv2.png/v1/fill/w_279,h_285,al_c,q_85,usm_0.66_1.00_0.01/Image-empty-state.webp");
+}
+
+.player3 {
+    z-index: 1;
+    margin-left: var(--spacer2);
+    background-size: cover;
+    background-image: url("https://static.wixstatic.com/media/ab3530_711253a49a1249b6a3c97a3a7f836dbe~mv2.png/v1/fill/w_279,h_285,al_c,q_85,usm_0.66_1.00_0.01/Image-empty-state.webp");
+}
+
+.player4 {
+    z-index: 1;
+    margin-left: var(--spacer3);
+    background-size: cover;
+    background-image: url("https://static.wixstatic.com/media/ab3530_420946cdd5c44d7386380952401d9d88~mv2.png/v1/fill/w_279,h_285,al_c,q_85,usm_0.66_1.00_0.01/Image-empty-state.webp");
+}
+
+.player5 {
+    z-index: 1;
+    margin-left: var(--spacer4);
+    background-size: cover;
+    background-image: url("https://static.wixstatic.com/media/ab3530_db5fd150356f4639827c40e3860a1363~mv2.png/v1/fill/w_279,h_285,al_c,q_85,usm_0.66_1.00_0.01/Image-empty-state.webp");
+}
+
+.player6 {
+    z-index: 1;
+    margin-left: var(--spacer5);
+    background-size: cover;
+    background-image: url("https://static.wixstatic.com/media/ab3530_c522db8f517b413596b0ebbb23a7c15d~mv2.png/v1/fill/w_279,h_285,al_c,q_85,usm_0.66_1.00_0.01/Image-empty-state.webp");
+}
+
+.description span {
+    text-transform: uppercase;
+    display: block;
+}
+
+.NameText {
+    color: #fff;
+    font-size: 80px;
+    font-weight: 800px;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    animation: text 3s 1;
+    background: #000;
+}
+
+.NetworkText {
+    visibility: hidden;
+    color: white;
+}
+
+.NetworkText>i {
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.RoleText {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+@keyframes text {
+    0% {
+        color: #000;
+        margin-bottom: -40px;
+    }
+    30% {
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85% {
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}

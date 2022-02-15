@@ -40,7 +40,7 @@
                     <a class="nav-link" href="#"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="live.php">LIVE</a>
+                    <a href="#"><span class="navSpan on-air-sign on-air"><i class="fa-solid fa-circle"></i> En Live</span></a>
                 </li>
             </ul>
         </div>

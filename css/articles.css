@@ -1,0 +1,28 @@
+#articles>.row {
+    justify-content: center;
+}
+
+section#articles {
+    font-family: 'Raleway', sans-serif;
+}
+
+.panel {
+    display: flex;
+}
+
+.label {
+    margin-top: 1rem;
+}
+
+.payment-product a {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.title-product {
+    font-size: 32px;
+}
+
+.price-product {
+    font-size: 26px;
+}

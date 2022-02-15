@@ -1,0 +1,18 @@
+#news_page {
+    text-align: center;
+}
+
+.body-news {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.title-news {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.title-news p {
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+}

@@ -1,0 +1,102 @@
+.jumbo {
+    width: 100%;
+    height: 400px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons .big-icon {
+    width: 180px;
+    height: 180px;
+    background: url(http://localhost:3000/images/FOXUP.png) center top;
+    background-color: black;
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid #01b7dc;
+    margin-top: -90px;
+    z-index: 1;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-bottom: 50px;
+}
+
+.details h3 {
+    font-size: 28px;
+    margin-top: 15px;
+}
+
+.details p {
+    margin-top: 0;
+}
+
+.bio {
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 600px) {
+    .jumbo {
+        height: 200px !important;
+    }
+    .icons {
+        justify-content: center !important;
+    }
+}
+
+* {
+    transition: all 0.4s cubic-bezier(0.5, 0, 1, 0.8);
+}
+
+#social {
+    width: 300px;
+    height: 50px;
+}
+
+#social div {
+    width: 25%;
+    heighg: 100%;
+    display: block;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #FFF;
+    border-width: 1px;
+    border-radius: 0.5rem;
+}
+
+#social div:nth-of-type(1):hover {
+    box-shadow: inset 0 -50px 0 0 #0984e3;
+}
+
+#social div:nth-of-type(2):hover {
+    box-shadow: inset 0 -50px 0 0 #74b9ff;
+}
+
+#social div:nth-of-type(3):hover {
+    box-shadow: inset 0 -50px 0 0 #9146FF;
+}
+
+#social div:nth-of-type(4):hover {
+    box-shadow: inset 0 -50px 0 0 #e17055;
+}
+
+#social div i {
+    color: #FFF;
+    height: 50px;
+    width: 100%;
+    display: block;
+    line-height: 50px;
+}
+
+#social div i:hover {
+    transform: rotate(360deg);
+}
