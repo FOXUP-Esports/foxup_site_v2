@@ -18,31 +18,33 @@
         <div class="spacer"></div>
 
         <!--  Start Contact  -->
-        <div class="container col-12 col-md-6 gy-4">
-            <form action="" class="row">
-                <div class="col-6">
-                    <label for="surname" class="form-label">Prénom*</label>
-                    <input type="text" class="form-control" name="surname" id="surname" required />
-                </div>
-                <div class="col-6">
-                    <label for="name" class="form-label">Nom*</label>
-                    <input type="text" class="form-control" name="name" id="name" required />
-                </div>
-
-                <div class="col-12">
-                    <label for="mail" class="form-label">E-mail*</label>
-                    <input type="mail" class="form-control" name="mail" id="mail" required />
-                </div>
-
-                <div class="col-12">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea name="message" id="message" rows="3" class="form-control"></textarea>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn_contact w-100 bgbtn">Envoyer</button>
+        <section id="contact">
+            <div class="container col-12 col-md-6 gy-4">
+                <form action="contact_traitement.php" method="GET" class="row">
+                    <div class="col-6">
+                        <label for="surname" class="form-label">Prénom *</label>
+                        <input type="text" placeholder="Prénom" class="form-control" name="surname" id="surname" required />
                     </div>
-                </div>
-            </form>
-        </div>
+                    <div class="col-6">
+                        <label for="name" class="form-label">Nom *</label>
+                        <input type="text" placeholder="Nom" class="form-control" name="name" id="name" required />
+                    </div>
+
+                    <div class="col-12 margin-top-15">
+                        <label for="email" class="form-label">E-mail *</label>
+                        <input type="mail" placeholder="E-mail" class="form-control" name="email" id="email" required />
+                    </div>
+
+                    <div class="col-12 margin-top-15">
+                        <label for="message" class="form-label">Message *</label>
+                        <textarea name="message" placeholder="Message" id="message" rows="3" class="form-control" required></textarea>
+                        <div class="col-12 margin-top-15">
+                            <button type="submit" class="btn btn_contact w-100 bgbtn">Envoyer</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
         <!-- End Contact  -->
 
         <div class="spacer"></div>
