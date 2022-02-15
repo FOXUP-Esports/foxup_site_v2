@@ -27,9 +27,10 @@
                                 <div class="EnteteSPonsor">
                                     <div class="EnteteText">Gaming Store</div>
                                     <div class="RS">
-                                        <a href="#"><i class="fa-solid fa-globe tailleIcones fbG"></i></a>
-                                        <a href="#"><i class="fab fa-facebook-f tailleIcones fbG"></i></a>
-                                        <a href="#"><i class="fab fa-twitter tailleIcones twitercolor"></i></a>
+                                        <a href="https://www.gamingstorefrance.fr/"><i class="fa-solid fa-globe tailleIcones fbG"></i></a>
+                                        <a href="https://www.facebook.com/GamingStore-104447391991112"><i class="fab fa-facebook-f tailleIcones fbG"></i></a>
+                                        <a href="https://www.instagram.com/gamingstore_france/"><i class="fa-brands fa-instagram"></i></a>
+
                                     </div>
                                 </div>
                                 <div class="line">________________</div>
@@ -46,9 +47,9 @@
                                 <div class="EnteteSPonsor2">
                                     <div class="EnteteText2">Alpha FRANCE</div>
                                     <div class="RS2">
-                                        <a href="#"><i class="fa-solid fa-globe tailleIcones fbG"></i></a>
-                                        <a href="#"><i class="fab fa-facebook-f tailleIcones fbG"></i></a>
-                                        <a href="#"><i class="fab fa-twitter tailleIcones twitercolor"></i></a>
+                                        <a href="https://alpha-officiel.fr/"><i class="fa-solid fa-globe tailleIcones fbG"></i></a>
+                                        <a href="https://www.facebook.com/alphafranceofficiel/"><i class="fab fa-facebook-f tailleIcones fbG"></i></a>
+                                        <a href="https://www.instagram.com/alpha_franceofficiel/"><i class="fa-brands fa-instagram"></i></a>
                                     </div>
                                 </div>
                                 <div class="line2">________________</div>
