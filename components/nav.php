@@ -28,7 +28,7 @@
             <a class="navbar-brand d-none d-lg-block" href="#"><img class="nav-logo" src="images/FOXUP.png" /></a>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="tournois.php">F-CUP / Droit d'entrée</a>
+                    <a class="nav-link" href="f-cup.php">F-CUP / Droit d'entrée</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="news.php">NEWS</a>
