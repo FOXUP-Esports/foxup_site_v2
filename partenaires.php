@@ -23,7 +23,7 @@
                 <div class="row">
                     <div class="container">
                         <div class="partenaire paddingRightSponsor">
-                            <div id=" texteSponsor" class="texteSponsor">
+                            <div id="texteSponsor" class="texteSponsor">
                                 <div class="EnteteSPonsor">
                                     <div class="EnteteText">Gaming Store</div>
                                     <div class="RS">
