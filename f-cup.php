@@ -20,7 +20,7 @@
         <!--  Start Contact  -->
         <section id="F-CUP">
             <div class="container">
-                <img src="image/baniereFCUP.png" class="img-fluid" />
+                <img src="images/baniereFCUP.png" class="img-fluid" />
             </div>
 
             <div class="container">
