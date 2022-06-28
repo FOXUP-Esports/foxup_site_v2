@@ -48,8 +48,11 @@
                     <div class="margin-left">
                         <div class="card-wrapper">
                             <div class="card-body">
-                                <h2>Go Down Sunshine</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores repellat distinctio tenetur delectus consectetur aperiam molestias quibusdam impedit earum pariatur perspiciatis obcaecati sit quae tempore, sint error porro fugit sunt.</p>
+                                <h2>Tournoi F-CUP</h2>
+                                <p>Notre tournoi est de retour; mais avec cette fois-çi, 1000€ à gagner !
+                                    INSCRIPTION - F-CUP
+                                    Pour inscrire ta team ? c'est directement...
+                                </p>
                             </div>
                             <div class="card-image"></div>
                         </div>
@@ -60,8 +63,8 @@
                         <div class="card-wrapper">
                             <div class="card-image image-border"></div>
                             <div class="card-body card-body-border">
-                                <h2>Go Down Sunshine</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores repellat distinctio tenetur delectus consectetur aperiam molestias quibusdam impedit earum pariatur perspiciatis obcaecati sit quae tempore, sint error porro fugit sunt.</p>
+                                <h2>Notre coach PtiRenard qui explique pourquoi Fracture est difficile à jouer.</h2>
+                                <p>Fracture est une map compliqué à appréhender par les joueurs de par sa construction en "H" qui la rend unique.</p>
                             </div>
                         </div>
                     </div>
@@ -70,8 +73,9 @@
                     <div class="margin-left">
                         <div class="card-wrapper">
                             <div class="card-body">
-                                <h2>Go Down Sunshine</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores repellat distinctio tenetur delectus consectetur aperiam molestias quibusdam impedit earum pariatur perspiciatis obcaecati sit quae tempore, sint error porro fugit sunt.</p>
+                                <h2>La team organise le 19 Décembre 2021, la première édition de son tournoi : la...</h2>
+                                <p>Le bracket de la 1ère Édition ci-dessus. Les inscriptions se déroulent ici : https://play.toornament.com/fr/tournaments/5080650184610308096/
+                                </p>
                             </div>
                             <div class="card-image"></div>
                         </div>
@@ -82,9 +86,20 @@
                         <div class="card-wrapper">
                             <div class="card-image image-border"></div>
                             <div class="card-body card-body-border">
-                                <h2>Go Down Sunshine</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores repellat distinctio tenetur delectus consectetur aperiam molestias quibusdam impedit earum pariatur perspiciatis obcaecati sit quae tempore, sint error porro fugit sunt.</p>
+                                <h2>La FOXUP annonce sa toute première lineup sur le jeu League of Legends.</h2>
+                                <p>La FOXUP Esports, ayant commencé à faire ces premiers résultats sur Valorant et Rainbow Six Siege veux continuer sa progression en...</p>
                             </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="news_page.php?id=1" class="newsLink">
+                    <div class="margin-left">
+                        <div class="card-wrapper">
+                            <div class="card-body">
+                                <h2>Interview : Jess, co-fondatrice de la FOXUP, manageuse et joueuse R6 vous parles de son jeu favoris.</h2>
+                                <p></p>
+                            </div>
+                            <div class="card-image"></div>
                         </div>
                     </div>
                 </a>

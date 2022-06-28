@@ -20,15 +20,11 @@
         <!--  Start Contact  -->
         <section id="F-CUP">
             <div class="container">
-                <img src="images/image f-cup kiiperone.webp" class="img-fluid" />
-            </div>
-
-            <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-xl-6">
-
+                        <img src="images/image f-cup kiiperone.webp" class="img-fluid" />
                     </div>
-                    <div class="col-6 text-center">
+                    <div class="col-12 text-center">
                         <h3>INSCRIPTION F-CUP <br />EDITION</h3>
                         <p>_________________ <br />15,00€</p>
                         <div>
