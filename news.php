@@ -44,7 +44,57 @@
         <!--  Start News  -->
         <section id="news">
             <div class="container">
-                <a href="news_page.php?id=1" class="newsLink">
+                <?php
+
+                $url = 'https://foxup-backend.herokuapp.com/api/blogs?populate=Image';
+                $curl = curl_init();
+                curl_setopt($curl, CURLOPT_URL, $url);
+                curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+                curl_setopt($curl, CURLOPT_HEADER, false);
+                $data = curl_exec($curl);
+                $data_decode = json_decode($data, true);
+                curl_close($curl);
+
+                for ($i = 0; $i < count($data_decode["data"]); $i++) {
+
+                    $id = $data_decode['data'][$i]['id'];
+                    $title = $data_decode['data'][$i]['attributes']['Titre'];
+                    $description = substr($data_decode['data'][$i]['attributes']['Texte'], 0, 150) . '...';
+                    $image = $data_decode['data'][$i]['attributes']['Image']['data']['attributes']['url'];
+
+                    if ($i % 2 == 1) {
+                        // impaire
+                        echo '<a href="news_page.php?id=' . $id . '" class="newsLink">
+                            <div class="margin-right">
+                                <div class="card-wrapper">
+                                    <div class="card-body">
+                                        <h2>' . $title . '</h2>
+                                        <p>' . $description . '</p>
+                                    </div>
+                                    <div class="card-image"></div>
+                                </div>
+                            </div>
+                        </a>';
+                    } else {
+                        // paire
+                        echo '<a href="news_page.php?id=' . $id . '" class="newsLink">
+                            <div class="margin-left">
+                                <div class="card-wrapper">
+                                    <div class="card-body">
+                                        <h2>' . $title . '</h2>
+                                        <p>' . $description . '</p>
+                                    </div>
+                                    <div class="card-image"></div>
+                                </div>
+                            </div>
+                        </a>';
+                    }
+                }
+
+
+
+                ?>
+                <!-- <a href="news_page.php?id=1" class="newsLink">
                     <div class="margin-left">
                         <div class="card-wrapper">
                             <div class="card-body">
@@ -102,7 +152,7 @@
                             <div class="card-image"></div>
                         </div>
                     </div>
-                </a>
+                </a> -->
             </div>
         </section>
         <!-- End News  -->
