@@ -15,27 +15,17 @@
     <main>
         <!--  Start Header  -->
         <header>
-
-            <?php
-            $url = $Strappi_Video;
-            $curl = curl_init();
-            curl_setopt($curl, CURLOPT_URL, $url);
-            curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-            curl_setopt($curl, CURLOPT_HEADER, false);
-            $data = curl_exec($curl);
-            $json_decode = json_decode($data, true);
-            curl_close($curl);
-            $video = $json_decode["data"]["attributes"]["video"]["data"]["attributes"]["url"];
-
-
-            ?>
+            <script>
+                /* It's calling the function getVideoHeader() from the API.js file. */
+                getVideoHeader();
+            </script>
 
             <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
             <div class="overlay"></div>
 
             <!-- The HTML5 video element that will create the background video on the header -->
             <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                <source src="<?php echo $StrappiBaseUrl . $video; ?>" type="video/mp4">
+                <source src="" type="video/mp4">
             </video>
 
             <!-- The header content -->
