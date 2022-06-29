@@ -47,18 +47,24 @@
                 <div class="row row-cols-1 row-cols-md-4 g-5">
                     <?php
 
-                    $json = file_get_contents($Strappi_Staff);
-                    $json_decode = json_decode($json);
-                    $totalStaff = $json_decode->meta->pagination->total; // 2
+                    $url = $Strappi_Staff;
+                    $curl = curl_init();
+                    curl_setopt($curl, CURLOPT_URL, $url);
+                    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+                    curl_setopt($curl, CURLOPT_HEADER, false);
+                    $data = curl_exec($curl);
+                    $json_decode = json_decode($data, true);
+                    curl_close($curl);
+                    $totalStaff = $json_decode["meta"]["pagination"]["total"]; // 2
 
                     for ($i = 0; $i < $totalStaff; $i++) {
                     ?>
                         <div class="col">
                             <div class="card card-staff">
-                                <img src="<?php echo $StrappiBaseUrl . $json_decode->data[$i]->attributes->Image->data->attributes->url; ?>" class="card-img-top" alt="...">
+                                <img src="<?php echo $StrappiBaseUrl . $json_decode["data"][$i]["attributes"]["Image"]["data"]["attributes"]["url"]; ?>" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <p class="card-title fontStencil"><?php echo $json_decode->data[$i]->attributes->Name; ?></p>
-                                    <p class="card-role fontRaleway"><?php echo $json_decode->data[$i]->attributes->Role; ?></p>
+                                    <p class="card-title fontStencil"><?php echo $json_decode["data"][$i]["attributes"]["Name"]; ?></p>
+                                    <p class="card-role fontRaleway"><?php echo $json_decode["data"][$i]["attributes"]["Role"]; ?></p>
                                 </div>
                             </div>
                         </div>

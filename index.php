@@ -17,9 +17,16 @@
         <header>
 
             <?php
-            $json = file_get_contents($Strappi_Video);
-            $json_decode = json_decode($json, true);
+            $url = $Strappi_Video;
+            $curl = curl_init();
+            curl_setopt($curl, CURLOPT_URL, $url);
+            curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($curl, CURLOPT_HEADER, false);
+            $data = curl_exec($curl);
+            $json_decode = json_decode($data, true);
+            curl_close($curl);
             $video = $json_decode["data"]["attributes"]["video"]["data"]["attributes"]["url"];
+
 
             ?>
 
