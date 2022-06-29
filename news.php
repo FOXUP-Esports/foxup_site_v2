@@ -45,8 +45,7 @@
         <section id="news">
             <div class="container">
                 <?php
-
-                $url = 'https://foxup-backend.herokuapp.com/api/blogs?populate=Image';
+                $url = $StrappiBaseUrl . '/api/blogs?populate=Image';
                 $curl = curl_init();
                 curl_setopt($curl, CURLOPT_URL, $url);
                 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
@@ -60,7 +59,7 @@
                     $id = $data_decode['data'][$i]['id'];
                     $title = $data_decode['data'][$i]['attributes']['Titre'];
                     $description = substr($data_decode['data'][$i]['attributes']['Texte'], 0, 150) . '...';
-                    $image = $data_decode['data'][$i]['attributes']['Image']['data']['attributes']['url'];
+                    $image = $StrappiBaseUrl . $data_decode['data'][$i]['attributes']['Image']['data']['attributes']['url'];
 
                     if ($i % 2 == 1) {
                         // impaire
@@ -71,7 +70,7 @@
                                         <h2>' . $title . '</h2>
                                         <p>' . $description . '</p>
                                     </div>
-                                    <div class="card-image"></div>
+                                    <div class="card-image" style="background: url(' . $image . '); background-size: cover; background-position: center center;"></div>
                                 </div>
                             </div>
                         </a>';
@@ -84,7 +83,7 @@
                                         <h2>' . $title . '</h2>
                                         <p>' . $description . '</p>
                                     </div>
-                                    <div class="card-image"></div>
+                                    <div class="card-image" style="background: url(' . $image . '); background-size: cover; background-position: center center;"></div>
                                 </div>
                             </div>
                         </a>';
